@@ -16,6 +16,6 @@ public class PaletteActivity extends AppCompatActivity {
         String colors[] = {"White","Red", "Blue", "Green", "Yellow", "Purple"};
 
         Spinner paletteSpinner = findViewById(R.id.paletteSpinner);
-        paletteSpinner.setAdapter(new PaletteAdapter(colors));
+        paletteSpinner.setAdapter(new PaletteAdapter(this, colors));
     }
 }
